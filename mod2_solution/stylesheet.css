@@ -6,27 +6,73 @@ h1{
     text-align:center;
 }
 div{
-    color:#ef0101
+    background-color: rgb(183, 183, 183);
     font-size:30px;
-    border:dotted;
-    padding:5px;
-    margin:10px;
-    width:200px;
-}
-
-div>div{
-    position:relative;
-    left:127px;
-    bottom: 15px;
-    width:55px;
-    text-align:center;
     border:solid;
+    border-width: 1px;
 }
 #chicken{
-
+    background-color: #e99191;
 }
 #beef{
-
+    background-color:#dfb2d9;
 }
 #sushi{
+    background-color:#aadae6;
+}
+.child_tag{
+    width:30%;
+    border:solid;
+    border-width:1px;
+    text-align:center;
+    float:right;
+    
+}
+/* Large Devices*/
+@media(min-width:992px){
+    .Parent{
+        width:30%;
+    }
+    #chicken_p{
+        float:left;
+        margin-left:2.5%;
+    }
+    #beef_p{
+        float:left;
+        margin-left:2.5%;
+    }
+    #sushi_p{
+        float:right;
+        margin-right:2.5%;
+    }
+    
+}
+
+/* Medium Devices*/
+@media(min-width:768px) and (max-width:991px){
+    .col-md-6{
+        width:45%;
+    }
+    .col-md-12{
+        width:100%;
+    }
+    #chicken_p{
+        float:left;
+        margin-left:2.5%;
+    }
+    #beef_p{
+        float:right;
+        margin-left:2.5%;
+        margin-right:2.5%;
+    }
+    #sushi_p{
+        display:inline-block;
+        position:relative;
+        margin:20px;
+    }
+}
+@media(max-width:767px){
+    div{
+        width:100%
+    }
 }
